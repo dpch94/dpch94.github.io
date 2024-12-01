@@ -112,23 +112,25 @@ body {
   /* Projects Section */
   .project-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(460px, 1fr)); /* Dynamic columns with a minimum width */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Dynamic columns with a minimum width */
     gap: 20px; /* Space between grid items */
     justify-content: center; /* Center the grid */
     margin: 20px auto; /* Center the grid container vertically */
     padding: 0 20px; /* Padding around the grid container */
-    max-width: 1000px; /* Restrict the maximum width of the grid */
+    max-width: 1000px; /* Restrict the maximum width of the grid */    
     box-sizing: border-box; /* Ensure padding doesn't affect dimensions */
   }
   
   /* Individual Project Card */
   .project {
-    background-color: #e6f7ff; /* Light blue background for cards */
+    background-color: #e6f7ff; /* Light blue background for cards */    
     border-radius: 12px; /* Rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-    padding: 20px; /* Space inside the card */
+    padding: 12px; /* Space inside the card */
     text-align: center; /* Center-align the content */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-height: 800px;
+    
   }
   
   .project:hover {
@@ -138,7 +140,7 @@ body {
   }
   
   .project-thumbnail {
-    width: 400x;
+    width: 250x;
     height: 250px;
     border-radius: 8px; /* Rounded corners for the image */
     margin-bottom: 15px; /* Space between the image and title */
@@ -191,7 +193,7 @@ ul {
   @media (max-width: 768px) {
     .project {
       flex: 1 1 100%; /* Projects will stack vertically on smaller screens */
-      max-width: 100%;
+      max-width: 100%;      
     }
   }
   
